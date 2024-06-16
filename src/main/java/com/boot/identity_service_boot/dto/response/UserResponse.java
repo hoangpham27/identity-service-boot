@@ -1,16 +1,17 @@
-package com.boot.identity_service_boot.dto.request;
+package com.boot.identity_service_boot.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
-
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserUpdateRequest {
+public class UserResponse {
+    String id;
+    String username;
     String password;
     String firstName;
     String lastName;
